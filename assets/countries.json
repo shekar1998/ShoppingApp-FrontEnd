@@ -1,0 +1,91 @@
+[
+  {
+    "name": "Australia",
+    "code": "AU"
+  },
+  {
+    "name": "Austria",
+    "code": "AT"
+  },
+  {
+    "name": "Azerbaijan",
+    "code": "AZ"
+  },
+  {
+    "name": "Bahamas",
+    "code": "BS"
+  },
+  {
+    "name": "Bahrain",
+    "code": "BH"
+  },
+  {
+    "name": "Bangladesh",
+    "code": "BD"
+  },
+  {
+    "name": "Barbados",
+    "code": "BB"
+  },
+  {
+    "name": "Belarus",
+    "code": "BY"
+  },
+  {
+    "name": "Belgium",
+    "code": "BE"
+  },
+  {
+    "name": "Belize",
+    "code": "BZ"
+  },
+  {
+    "name": "Benin",
+    "code": "BJ"
+  },
+  {
+    "name": "Bermuda",
+    "code": "BM"
+  },
+  {
+    "name": "India",
+    "code": "IN"
+  },
+
+  {
+    "name": "Moldova, Republic of",
+    "code": "MD"
+  },
+  {
+    "name": "Monaco",
+    "code": "MC"
+  },
+  {
+    "name": "Mongolia",
+    "code": "MN"
+  },
+  {
+    "name": "Montserrat",
+    "code": "MS"
+  },
+  {
+    "name": "Myanmar",
+    "code": "MM"
+  },
+  {
+    "name": "Namibia",
+    "code": "NA"
+  },
+  {
+    "name": "Puerto Rico",
+    "code": "PR"
+  },
+  {
+    "name": "Qatar",
+    "code": "QA"
+  },
+  {
+    "name": "Russian Federation",
+    "code": "RU"
+  }
+]

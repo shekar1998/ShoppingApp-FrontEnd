@@ -1,0 +1,20 @@
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTYzZTkzZWE4NzNlOTFiZTBjZTNjYjkiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzYwNDE1MTAsImV4cCI6MTYzNjEyNzkxMH0.pI4u_tJzw1sKaF1-Jg9AhYZZinuEnms_NWlF-mBAVcg",
+    "user": {
+        "__v": 0,
+        "_id": "6163e93ea873e91be0ce3cb9",
+        "apartment": "",
+        "city": "Bngalore",
+        "country": "Karnataka",
+        "createdAt": "2021-10-11T07:35:26.657Z",
+        "email": "manju@gmail.com",
+        "id": "6163e93ea873e91be0ce3cb9",
+        "isAdmin": true,
+        "name": "Manju",
+        "passwordHash": "$2a$10$BbQ7s5Y0a7H9Ee5NYYYI.OS8GA18EPfiHHZQ6IuEphuolJkt7TUSC",
+        "phone": "82172803",
+        "street": "3rd cross",
+        "updatedAt": "2021-10-11T07:35:26.657Z",
+        "zip": "560072"
+    }
+}

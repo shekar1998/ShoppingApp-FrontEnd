@@ -1,0 +1,229 @@
+
+   &#8377;          <Box
+              alignItems={'center'}
+              width="100%"
+              alignSelf="center"
+              px="4"
+              flexDirection={'row'}>
+              <Text style={styles.mainText}>Hi, {UserDetails.name}</Text>
+            </Box>
+            <Box
+              justifyContent={'space-between'}
+              width="100%"
+              alignSelf="center"
+              px="4"
+              py="1">
+              <Box
+                alignItems={'center'}
+                width="100%"
+                alignSelf="center"
+                flexDirection={'row'}>
+                <Icon name="call" size={16} color={bgcolor.Icon} />
+                <Text style={styles.Text}>+91 {UserDetails.phone}</Text>
+              </Box>
+              <Box alignItems={'center'} width="100%" flexDirection={'row'}>
+                <Icon name="email" size={16} color={bgcolor.Icon} />
+                <Text style={styles.Text}>{UserDetails.email}</Text>
+              </Box>
+            </Box>
+
+    <VirtualizedView>
+        {list.map((data: any) => {
+          return (
+            <View key={data._id} style={styles.container}>
+              <View style={styles.detailContainer}>
+                <View style={styles.imageContainer}>
+                  <Image style={styles.image} source={{uri: data.image}} />
+                </View>
+                <View style={styles.info}>
+                  <View style={styles.details}>
+                    <Text
+                      style={{
+                        ...styles.text,
+                        fontSize: 14,
+                        fontWeight: '700',
+                        marginTop: 20,
+                      }}>
+                      {data.name}
+                    </Text>
+                    <Text
+                      style={{
+                        ...styles.text,
+                        fontSize: 12,
+                        color: bgcolor.Icon,
+                        paddingBottom: 5,
+                      }}>
+                      {data.description}
+                    </Text>
+                    <Text style={styles.price}>&#8377; {data.price}</Text>
+                  </View>
+                </View>
+              </View>
+            </View>
+          );
+        })}
+      </VirtualizedView>
+
+        <Box w={'55%'} h={'50%'} flexDirection={'row'}>
+          <View style={styles.ImageContainer}>
+            <Image
+              style={styles.image}
+              source={{
+                uri: 'https://www.freepnglogos.com/uploads/macbook-png/apple-macbook-pro-quot-mid-21.png',
+              }}
+            />
+          </View>
+          <Box w={'100%'} h={'50%'}>
+            <Text
+              textAlign={'center'}
+              justifyContent="center"
+              fontFamily={'Dongle'}
+              fontWeight={'400'}
+              color={bgcolor.Icon}
+              fontSize={26}>
+              Best Selling Products
+            </Text>
+            <Box flexDirection={'row'} px={1} alignItems={'center'}>
+              <MaterialCommunityIcons
+                style={styles.Iconimage}
+                name="bullseye-arrow"
+                size={25}
+                color={bgcolor.Icon}
+              />
+              <Text
+                textAlign={'center'}
+                justifyContent="center"
+                fontWeight={'700'}
+                color={'grey'}
+                marginX={7}
+                fontSize={19}>
+                8574
+              </Text>
+            </Box>
+
+            <Box flexDirection={'row'} alignItems={'center'}>
+              <View style={styles.ImageContainer}>
+                <Image
+                  style={styles.Iconimage}
+                  source={{
+                    uri: 'https://cdn-icons-png.flaticon.com/128/4721/4721635.png',
+                  }}
+                />
+              </View>
+              <Text
+                textAlign={'center'}
+                justifyContent="center"
+                fontFamily={'Dongle'}
+                fontWeight={'400'}
+                color={'green.500'}
+                marginX={3}
+                fontSize={30}>
+                84.54%
+              </Text>
+            </Box>
+          </Box>
+        </Box>
+        <Box w={'55%'} h={'50%'} flexDirection={'row'}>
+          <View style={styles.ImageContainer}>
+            <Image
+              style={styles.image}
+              source={{
+                uri: 'https://www.freepnglogos.com/uploads/airpods-png/airpods-pro-airpods-what-the-difference-and-10.png',
+              }}
+            />
+          </View>
+          <Box w={'100%'} h={'50%'}>
+            <Text
+              textAlign={'center'}
+              justifyContent="center"
+              fontFamily={'Dongle'}
+              fontWeight={'400'}
+              color={bgcolor.Icon}
+              fontSize={26}>
+              Best Selling Products
+            </Text>
+            <Box flexDirection={'row'} px={1} alignItems={'center'}>
+              <MaterialCommunityIcons
+                style={styles.Iconimage}
+                name="bullseye-arrow"
+                size={25}
+                color={bgcolor.Icon}
+              />
+              <Text
+                textAlign={'center'}
+                justifyContent="center"
+                fontWeight={'700'}
+                color={'grey'}
+                marginX={7}
+                fontSize={19}>
+                8574
+              </Text>
+            </Box>
+
+            <Box flexDirection={'row'} alignItems={'center'}>
+              <Image
+                style={styles.Iconimage}
+                source={{
+                  uri: 'https://cdn-icons-png.flaticon.com/128/4721/4721635.png',
+                }}
+              />
+              <Text
+                textAlign={'center'}
+                justifyContent="center"
+                fontFamily={'Dongle'}
+                fontWeight={'400'}
+                color={'green.500'}
+                marginX={3}
+                fontSize={30}>
+                84.54%
+              </Text>
+            </Box>
+          </Box>
+        </Box>
+        <Box w={'55%'} h={'50%'} flexDirection={'row'}>
+          <Image
+            style={styles.Iconimage}
+            source={{
+              uri: 'https://pngimg.com/uploads/iphone_13/iphone_13_PNG9.png',
+            }}
+          />
+          <Box w={'100%'} h={'50%'}>
+            <Text
+              justifyContent="center"
+              fontFamily={'Dongle'}
+              fontWeight={'400'}
+              color={bgcolor.Icon}
+              fontSize={26}>
+              Best Viewed Product
+            </Text>
+            <Box flexDirection={'row'} px={1} alignItems={'center'}>
+              <Text
+                textAlign={'center'}
+                justifyContent="center"
+                fontWeight={'700'}
+                color={'grey'}
+                fontSize={19}>
+                &#8377; 8574
+              </Text>
+            </Box>
+
+            <Box flexDirection={'row'} alignItems={'center'}>
+              <Image
+                style={{...styles.image, width: '30%', height: '40%'}}
+                source={{
+                  uri: 'https://cdn-icons-png.flaticon.com/128/4721/4721635.png',
+                }}
+              />
+              <Text
+                textAlign={'center'}
+                justifyContent="center"
+                fontFamily={'Dongle'}
+                fontWeight={'400'}
+                color={'green.500'}
+                marginX={3}
+                fontSize={30}>
+                84.54%
+              </Text>
+            </Box>
+          </Box>
+        </Box>

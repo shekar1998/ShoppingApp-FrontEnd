@@ -1,0 +1,66 @@
+[
+    {
+        "_id": {
+            "$oid": "10f15d5cdcb4a6642bddc0fe9e"
+        },
+        "name": "All",
+        "icon":"infinite-sharp",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f15d5cdcb4a6642bddc0fe9e"
+        },
+        "name": "Electronics",
+        "icon":"",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f15d5b2cb4a6642bddc0fe7"
+        },
+        "name": "Phone",
+        "icon":"",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f15d5cdcb4a6642bddc0fe9"
+        },
+        "name": "Computer",
+        "icon":"",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5a15d5cdcb4w6642bddc0fe9e"
+        },
+        "name": "Earphones",
+        "icon":"",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "5f15d5cdcghhj6642bddc0fe9e"
+        },
+        "name": "Home",
+        "icon":"",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6f15d5cdcb4a6642bddc0fe9e"
+        },
+        "name": "Garden",
+        "icon":"",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "7f15d5cdcb4a6642bddc0fe9e"
+        },
+        "name": "Games",
+        "icon":"",
+        "__v": 0
+    }
+]
