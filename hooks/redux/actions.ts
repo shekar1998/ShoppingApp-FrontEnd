@@ -10,6 +10,7 @@ import {
   ALL_PRODUCTS,
   SET_CURRENT_USER,
   USER_UPDATED,
+  DELETED_USER_UPDATED
 } from './actionTypes';
 
 export const AllProducts = (Products: any) => {
@@ -92,3 +93,12 @@ export const setUpdatedUser = (UpdatedCheck: any, UpdatedValue: any) => {
     value: UpdatedCheck,
   };
 };
+
+export const updateAfterUpdate = (updatedValue:any) => {
+
+  return {
+    type: DELETED_USER_UPDATED,
+    payload: updatedValue,
+  };
+};
+

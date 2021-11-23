@@ -9,6 +9,7 @@ export const ALL_CATEGORY = "ALL_CATEGORY";
 export const ALL_PRODUCTS = "ALL_PRODUCTS";
 export const SET_CURRENT_USER = "SET_CURRENT_USER";
 export const USER_UPDATED = "USER_UPDATED";
+export const DELETED_USER_UPDATED = "DELETED_USER_UPDATED";
 
 
 

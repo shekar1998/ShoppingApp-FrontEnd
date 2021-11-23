@@ -5,6 +5,7 @@ import Icon from 'react-native-vector-icons/SimpleLineIcons';
 import color from '../color/color';
 import Homescreen from '../Screens/Home/Homescreen';
 import SingleProduct from '../Screens/Product/SingleProduct';
+import ProductList from '../Screens/Product/ProductList';
 
 const Stack = createNativeStackNavigator();
 
@@ -42,6 +43,7 @@ function RootNavigation() {
         }}
         component={SingleProduct}
       />
+       
     </Stack.Navigator>
   );
 }

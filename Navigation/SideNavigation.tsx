@@ -1,12 +1,12 @@
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import Settings from '../Screens/User/UserProfile';
-import User from '../Screens/User/Register';
 import * as React from 'react';
 import AdminProducts from '../Screens/Admin/AdminProducts';
 import AdminUsersDetails from '../Screens/Admin/AdminUsersDetails';
 import color from '../color/color';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import AdminCatogery from '../Screens/Admin/AdminCatogery';
+import ProductList from '../Screens/Product/ProductList';
+import AdminAddProducts from '../Screens/Admin/AdminAddProducts';
 
 const Drawer = createDrawerNavigator();
 const bgcolor = color.light;
@@ -49,6 +49,23 @@ export default function SideNavigation() {
           ),
         }}
         component={AdminCatogery}
+      />
+        <Drawer.Screen
+         name="Add Products"
+         options={{
+           headerTintColor: bgcolor.text,
+           drawerIcon: () => (
+             <MaterialIcons name="library-add" size={25} color={bgcolor.Icon} />
+           )
+         }}
+         component={AdminAddProducts}
+       />
+      <Drawer.Screen
+        name="ProductList"
+        options={{
+          headerTintColor: bgcolor.text,
+        }}
+        component={ProductList}
       />
     </Drawer.Navigator>
   );

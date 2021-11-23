@@ -8,7 +8,6 @@ import {
 } from 'native-base';
 import React, {useState} from 'react';
 import {Dimensions, Image, StyleSheet, Text, View} from 'react-native';
-import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -20,6 +19,7 @@ import {useNavigation} from '@react-navigation/native';
 import {RegisterUser} from '../../Api/BackEndCAlls';
 import Toast from 'react-native-toast-message';
 import { useSelector } from 'react-redux';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 interface Props {}
 const bgcolor = color.light;

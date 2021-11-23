@@ -2,7 +2,6 @@ import * as React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import color from '../color/color';
-import Settings from '../Screens/User/UserProfile';
 import SideNavigation from './SideNavigation';
 import { getFocusedRouteNameFromRoute } from '@react-navigation/core';
 

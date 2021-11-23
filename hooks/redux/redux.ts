@@ -8,9 +8,13 @@ import {
   SetCardInputsReducer,
   SetCardInputsChoosenReducer,
   AllCategoryReducer,
-  AllProductsReducer
+  AllProductsReducer,
 } from './reducer';
-import { setCurrentUserReducer, UpdatedInitialStateReducer } from './loginRducer';
+import {
+  setCurrentUserReducer,
+  UpdatedInitialStateReducer,
+  updateAfterUpdateReducer,
+} from './loginRducer';
 
 const reducer = combineReducers({
   Category: SelectedCategoryReducer,
@@ -20,10 +24,11 @@ const reducer = combineReducers({
   Choice: SelectedChoiceReducer,
   CardInput: SetCardInputsReducer,
   CardInputChoosen: SetCardInputsChoosenReducer,
-  AllCategory:AllCategoryReducer,
-  AllProducts:AllProductsReducer,
-  LoggedInInfo:setCurrentUserReducer,
-  UpdatedValue:UpdatedInitialStateReducer
+  AllCategory: AllCategoryReducer,
+  AllProducts: AllProductsReducer,
+  LoggedInInfo: setCurrentUserReducer,
+  UpdatedValue: UpdatedInitialStateReducer,
+  UpdateCheck: updateAfterUpdateReducer,
 });
 
 const store = createStore(reducer);

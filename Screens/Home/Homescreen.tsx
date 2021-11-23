@@ -19,7 +19,7 @@ import VirtualizedView from '../VirtuaFlatList/Virtual';
 import data from '../../assets/data.json';
 import CategoryList from './CategoryList';
 import {SetAllProducts, SetCategory} from '../../hooks/api/ApiCalls';
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {getCategory, getProducts} from '../../Api/BackEndCAlls';
 import {LogBox} from 'react-native';
 import {Center} from 'native-base';
@@ -36,9 +36,11 @@ const Homescreen = (props: Props) => {
   const [Active, setActive]: any = useState(true);
   const [SelectedCategory, setSelectedCategory] = useState();
   const dispatch = useDispatch();
+  const UpdateCheck = useSelector((state: any) => state.UpdateCheck);
+  console.log('UpdateCheck', UpdateCheck.UpdatedCheck);
 
   useEffect(() => {
-    LogBox.ignoreAllLogs(); //Ignore all log notifications
+    LogBox.ignoreAllLogs();
     getProducts().then((res: any) => {
       SetAllProducts(dispatch, res);
     });
@@ -127,6 +129,7 @@ const Homescreen = (props: Props) => {
               <ProductList
                 category={SelectedCategory}
                 navigation={props.navigation}
+                route={props.route}
               />
             ) : null}
             {Focus ? (
@@ -155,7 +158,7 @@ const styles = StyleSheet.create({
     padding: 10,
     marginLeft: 10,
     fontWeight: '700',
-    fontFamily:'Dongle-Light'
+    fontFamily: 'Dongle-Light',
   },
   slider: {
     width: Dimensions.get('window').width - 20,
@@ -212,7 +215,7 @@ const styles = StyleSheet.create({
     padding: 10,
     textAlign: 'center',
     textAlignVertical: 'center',
-    fontFamily:'Dongle-Light'
+    fontFamily: 'Dongle-Light',
   },
   CategorytextContainer: {
     margin: 10,

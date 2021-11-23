@@ -16,6 +16,10 @@ target 'Shopping' do
 
   pod 'react-native-image-picker', :path => '../node_modules/@connectedbits/react-native-image-picker'
 
+  pod 'ReactNativeART', :path => '../node_modules/@react-native-community/art'
+
+  pod 'RNGoogleSignin', :path => '../node_modules/react-native-login-google'
+
   target 'ShoppingTests' do
     inherit! :complete
     # Pods for testing

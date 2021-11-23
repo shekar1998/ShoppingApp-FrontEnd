@@ -1,16 +1,25 @@
 import isEmpty from '../../Api/IsEmpty';
-import {SET_CURRENT_USER, USER_UPDATED} from './actionTypes';
+import {
+  SET_CURRENT_USER,
+  USER_UPDATED,
+  DELETED_USER_UPDATED,
+} from './actionTypes';
 
 const setCurrentUserInitialState: any = {
   isAuthenticated: false,
   user: [],
   userProfile: [],
-  UpdatedCheck:false
+  UpdatedCheck: false,
 };
 
 const setUpdatedInitialState: any = {
   Updated: false,
-  UpdatedValue: []
+  UpdatedValue: [],
+};
+
+const setupdateAfterUpdateReducer: any = {
+  UpdatedCheck: false,
+  UpdatedValue: [],
 };
 
 export const setCurrentUserReducer = (
@@ -36,11 +45,27 @@ export const UpdatedInitialStateReducer = (
 ) => {
   switch (action.type) {
     case USER_UPDATED:
-      console.log("Action => ", action, state.UpdatedCheck);
+      console.log('Action => ', action, state.UpdatedCheck);
       return {
         ...state,
         UpdatedValue: action.payload,
-        Updated:action.value
+        Updated: action.value,
+      };
+    default:
+      return state;
+  }
+};
+
+export const updateAfterUpdateReducer = (
+  state = setupdateAfterUpdateReducer,
+  action: any,
+) => {
+  switch (action.type) {
+    case DELETED_USER_UPDATED:
+      console.log('Action => ', action);
+      return {
+        ...state,
+        UpdatedCheck: action.payload,
       };
     default:
       return state;

@@ -1,37 +1,37 @@
 import React, {useState} from 'react';
 import {
-  Button,
   Dimensions,
   Image,
   ScrollView,
   StyleSheet,
-  Text,
   TouchableOpacity,
   View,
 } from 'react-native';
 import color from '../../color/color';
 import LinearGradient from 'react-native-linear-gradient';
 import ProductCard from './ProductCard';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon2 from 'react-native-vector-icons/Fontisto';
+import {useDispatch, useSelector} from 'react-redux';
+import {VStack, HStack, Radio, Text, Modal, Button, Spinner} from 'native-base';
 
 interface Props {
   item?: any;
-  navigation?:any
+  navigation?: any;
+  route?: any;
 }
 const bgcolor = color.light;
-
+const {width, height} = Dimensions.get('window');
 const ProductContainer = (props: Props) => {
-  const {name, description, price, image, brand}: any = props.item.item;
-  const [favoutite, setfavoutite] = useState(false);
-  const [ProductCtg, setProductCtg] = useState([]);
-  
-
+  const {image}: any = props.item.item;
+  const [favoutite, setfavoutite]: any = useState(false);
   function handleSelected() {
     setfavoutite(!favoutite);
   }
 
+
+
   return (
-    <TouchableOpacity activeOpacity={0.96} onPress={() => props.navigation.navigate('SingleProduct', {item:props.item})}>
+
       <LinearGradient
         colors={['#fff', '#fff']}
         start={{x: 0.7, y: 0}}
@@ -72,7 +72,7 @@ const ProductContainer = (props: Props) => {
           <ProductCard item={props.item.item} />
         </View>
       </LinearGradient>
-    </TouchableOpacity>
+
   );
 };
 
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
       height: -12,
     },
     shadowRadius: 10,
-    elevation: 2
+    elevation: 2,
   },
   ImageContainer: {
     width: '100%',
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     alignSelf: 'center',
-    backgroundColor: bgcolor.text
+    backgroundColor: bgcolor.text,
   },
   produtImage: {
     width: Dimensions.get('window').height / 4.9 - 50,
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
     borderRightColor: bgcolor.text,
     overflow: 'hidden',
     borderBottomEndRadius: 10,
-    borderBottomLeftRadius: 10
+    borderBottomLeftRadius: 10,
   },
   favoutite: {
     width: 22,
@@ -141,5 +141,8 @@ const styles = StyleSheet.create({
     width: '90%',
     height: '90%',
     alignSelf: 'center',
+  },
+  Modal: {
+    justifyContent: 'center',
   },
 });

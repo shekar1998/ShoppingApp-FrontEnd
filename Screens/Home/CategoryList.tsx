@@ -20,7 +20,6 @@ interface Props {
 const bgcolor = color.light;
 
 const CategoryList = (props: Props) => {
-  const [TextField, SetTextField] = useState('');
   const [Active, setActive]: any = useState(0);
   const [SelectedCategory, setSelectedCategory] = useState();
   const dispatch = useDispatch();

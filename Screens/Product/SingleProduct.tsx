@@ -6,7 +6,6 @@ import ProductimageSlider from './ProductImageSlider';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import Icon2 from 'react-native-vector-icons/Entypo';
 import ProductDetails from './ProductDetails';
-import ProductCart from './ProductCart';
 
 interface Props {}
 const bgcolor = color.light;
@@ -24,7 +23,6 @@ const SingleProduct = (props: any) => {
         <ProductimageSlider image={route.params.item.item.image} />
       </View>
       <ProductDetails item={route.params.item.item} />
-      <ProductCart />
     </View>
   );
 };

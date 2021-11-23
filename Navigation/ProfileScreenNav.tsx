@@ -7,8 +7,6 @@ import UserProfile from '../Screens/User/UserProfile';
 import {useSelector} from 'react-redux';
 import {useEffect, useState} from 'react';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import UserProfileEdit from '../Screens/User/UserProfileEdit';
 
 const Stack = createNativeStackNavigator();
 
